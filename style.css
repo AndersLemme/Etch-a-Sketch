@@ -10,11 +10,14 @@ html, body {
 }
 .container {
     background-color: rgb(78, 44, 44);
-    width: 200px;
-    height: 200px;
+    width: 500px;
+    height: 500px;
 }
 .grid {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+.grid_div :hover {
+    background-color: black;
 }
