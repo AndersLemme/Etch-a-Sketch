@@ -7,16 +7,30 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+h1 {
+    color: #D0B3FF;
+    font-size: 5rem;
+    margin: 10px;
+    text-shadow: 2px 10px 6px rgba(0, 0, 0, 0.7)
+
+}
+.buttons{
+    margin: 10px;
+    background-color: blueviolet;
+    gap: 100px;
+
 }
 .container {
-    background-color: rgb(78, 44, 44);
-    width: 500px;
-    height: 500px;
+    width: auto;
 }
 .grid {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    width: 500px;
+    height: 500px;
 }
 .grid_div :hover {
     background-color: black;
