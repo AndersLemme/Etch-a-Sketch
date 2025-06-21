@@ -31,15 +31,113 @@ button {
     padding: 5px 15px;
     background-color: #D0B3FF;
     color: #111820;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+}
+button:hover{
+    transform: scale(1.03);
 }
 .container {
     width: auto;
 }
 .grid {
-    margin-top: 20px;
+    margin: 20px;
     display: flex;  
     flex-wrap: wrap;
     flex-direction: row;
     width: 500px;
     height: 500px;
 }
+.slider_container{
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+}
+.value{
+    color: #D0B3FF;
+    font-size: 1.5rem;
+    padding: 8px
+}
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 200px;
+  height: 8px;
+  background: #2b2f38;
+  border-radius: 4px;
+  outline: none;
+  margin: 20px auto;
+  display: block;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+/* Chrome, Safari, Edge (WebKit) */
+.slider::-webkit-slider-runnable-track {
+  height: 8px;
+  background: #555;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #a78bfa;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #a78bfa;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 10px #a78bfa;
+  margin-top: -6px; /* aligns thumb in center of track */
+  transition: transform 0.2s ease;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+/* Firefox */
+.slider::-moz-range-track {
+  height: 8px;
+  background: #555;
+  border-radius: 4px;
+  box-shadow: 0 0 4px #a78bfa;
+}
+
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background: #a78bfa;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 10px #a78bfa;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}
+
+/*
+.slider{
+    width: 200px;
+    height: 10px;
+    background: #2b2f38;
+    border-radius: 50%;
+    outline: none;
+    margin: 20px auto;
+    display: block;
+    transition: background 0.3s;
+}
+.slider::-webkit-slider-thumb{
+    height: 20px;
+    width: 20px;
+    background: #a78bfa; 
+    border-radius: 50%;
+    border: none;
+    box-shadow: 0 0 10px #a78bfa;
+    transition: transform 0.2s ease;
+}
+*/
