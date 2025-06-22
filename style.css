@@ -19,7 +19,7 @@ h1 {
 .buttons{
     display: flex;
     height: 50px;
-    width: 200px;
+    width: 350px;
     margin: 20px;
     justify-content: space-between;
     gap: 30px;
@@ -53,7 +53,7 @@ button:hover{
     padding: 2rem;
     align-items: center;
 }
-.value{
+.slider_value{
     color: #D0B3FF;
     font-size: 1.5rem;
     padding: 8px

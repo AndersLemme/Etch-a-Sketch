@@ -7,6 +7,11 @@ white_btn.addEventListener("click", () =>{ color = "#D0B3FF";});
 const black_btn = document.getElementById("black");
 black_btn.addEventListener("click", () =>{ color = "#111820";});
 
+const slider = document.querySelector(".slider");
+const sliderval = document.querySelector(".slider_value");
+slider.addEventListener("input", () =>{
+    sliderval.textContent = slider.value;
+})
 
 const grid = document.querySelector(".grid");
 for(let i = 0; i < 10*10; i++){
