@@ -17,7 +17,7 @@ const sliderval = document.querySelector(".slider_value");
 
 //Creat Grid on window load.
 document.addEventListener("DOMContentLoaded",() => {
-    createGrid(10, color)
+    createGrid(10)
 })
 
 
@@ -30,10 +30,10 @@ slider.addEventListener("change", () =>{
     console.log(val);
     console.log(typeof val);
 
-    createGrid(val, color);
+    createGrid(val);
 })
 
-function createGrid(size, color){
+function createGrid(size){
     grid.innerHTML = ""; //clear grid before creating new one
 
     for(let i = 0; i < size*size; i++){
